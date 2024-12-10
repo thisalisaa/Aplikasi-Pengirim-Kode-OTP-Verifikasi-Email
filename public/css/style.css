@@ -1,0 +1,114 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f0f2f5; /* Latar belakang lebih terang */
+    font-family: 'Nunito', sans-serif; /* Font yang digunakan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container untuk card login */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi tinggi viewport */
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 400px; /* Ukuran maksimal card */
+    border: 1px solid #ddd; /* Border kotak yang halus */
+    border-radius: 10px; /* Sudut yang lebih halus */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    background-color: #ffffff; /* Warna latar belakang card */
+    overflow: hidden;
+}
+
+/* Header Card */
+.card-header {
+    background-color: #6c757d; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    font-size: 1.5rem; /* Ukuran font header */
+    text-align: center; /* Teks di tengah */
+    padding: 1rem 0; /* Padding atas dan bawah */
+    border-top-left-radius: 10px; /* Sudut kiri atas */
+    border-top-right-radius: 10px; /* Sudut kanan atas */
+}
+
+/* Body Card */
+.card-body {
+    padding: 2rem; /* Padding yang lebih besar */
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: #28a745; /* Warna tombol hijau */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut tombol */
+    padding: 12px 20px; /* Padding tombol */
+    font-size: 1.2rem; /* Ukuran font tombol */
+    width: 100%; /* Tombol memenuhi lebar */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol hover */
+.btn-primary:hover {
+    background-color: #218838; /* Warna saat hover */
+}
+
+/* Teks di tengah */
+.text-center {
+    text-align: center; /* Teks di tengah */
+}
+
+/* Form Input */
+.form-control {
+    border-radius: 5px; /* Sudut input */
+    padding: 12px; /* Padding lebih besar untuk input */
+    margin-bottom: 1rem; /* Jarak antar input */
+    border: 1px solid #ccc; /* Border abu-abu */
+    font-size: 1rem; /* Ukuran font pada input */
+}
+
+/* Form Label */
+label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Checkbox */
+.form-check-input {
+    margin-top: 0.3rem; /* Margin atas untuk checkbox */
+}
+
+/* Invalid feedback */
+.invalid-feedback {
+    font-size: 0.875rem; /* Ukuran font feedback */
+    color: #e74c3c; /* Warna merah untuk feedback */
+}
+
+/* Atur posisi login form agar berada di tengah */
+.card-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+    .card {
+        width: 90%; /* Mengatur card agar lebih kecil pada layar kecil */
+        margin: 10px; /* Memberi jarak sekitar */
+    }
+}
